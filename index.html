@@ -1,4 +1,149 @@
-<h1>HOLA QUE TAL</h1>
-<h2>cambio tu chabe</h2>
+<!DOCTYPE html>
+<html lang="es">
 
-<h3>hola qeu pasa loco</h3>
+<style>
+    .titulo{
+        position: relative;
+        height: 10%;
+        width: 95%;
+        margin: 0% 0% 0% 2.5%;
+        text-align: center;
+        color: rgba(0, 221, 192, 0.658);
+        background-color: rgb(58, 58, 58);
+        border:solid 1px rgb(58, 58, 58);
+    }
+    
+    .enlaces{
+        position: relative;
+        float: left;
+        margin: 0% 0% 0% 2.5%;
+        width: 20%;
+        height: 85%;
+        border: solid 1px rgb(58, 58, 58);
+
+        text-align: center;
+        text-decoration-line: underline;
+        padding-bottom: 30%;
+        overflow: hidden;
+    }
+    .seccion{
+        position: relative;
+        float: left;
+        display: block;
+        
+        width: 75%;
+
+        text-align: center;
+    }
+    H1.seccion{
+        font-weight: 700;
+        text-align: justify;
+        padding-left: 7.5%;
+    }
+    p.seccion{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        padding-left: 7.5%;
+    }
+</style>
+
+    <!-- ICONO DE LA PESTAÑA -->
+    <link rel="shortcut icon" href="Imagenes/icono.png" />
+    <!-- CABECERA -->
+	<head>
+		<meta charset="utf-8"/>
+		<title>Novedades de NVIDIA</title>
+		<meta name="Descripción del sitio web" content="Pagina para ver distintos ensambladores de tarjetas gráficas"/>
+		<meta name="Autores" content="Juan Francisco Gaitán Guerrero y Alberto Herreros Magaña"/>
+	</head>
+    <!-- CUERPO -->
+    <body style="margin-top: 0%;" background="Imagenes/fondo.png" style="background-repeat: no-repeat; background-size: cover">
+
+        <!-- TÍTULO -->
+        <div class="titulo">
+            <h1>NVIDIA RTX 3090 TI</h1>
+        </div>
+
+        <!-- SECCIÓN DE ENLACES -->
+        <div id="seccionEnlaces" class="enlaces" style="height: 100%;">
+
+            <h1 style="font-weight: 900;">ENLACES</h1>
+        
+                <p>
+                    <a href="https://es.msi.com/Graphics-Card/GeForce-RTX-3090-GAMING-X-TRIO-24G" >Ensambladora MSI</a>
+                </p>
+
+                <p>
+                    <a href="https://www.zotac.com/es/product/graphics_card/zotac-gaming-geforce-rtx-3090-trinity">Ensambladora Zotac</a>
+                </p>
+
+                <p>
+                    <a href="https://www.gigabyte.com/Graphics-Card/GV-N3090GAMING-OC-24GD">Ensambladora Gigabyte</a>
+                </p>
+
+                <p>
+                    <a href="https://latam.evga.com/products/product.aspx?pn=24G-P5-3985-KR">Ensambladora EVGA</a>
+                </p>         
+
+        </div>
+
+        <!-- SECCIÓN DE TEXTO -->
+        <div class="seccion">
+
+            <h1 class="seccion">· Un producto novedoso</h1>
+            <p class="seccion">
+                Una de las últimas invenciones de la prestigiosa empresa <a href="https://www.nvidia.com/">NVIDIA</a>, su esperada NVIDIA Geforce RTX 3090 Ti llega al mercado como una de las tarjetas
+                gráficas más esperadas de los últimos meses debido a que rápidamente se ha coronado como la más potente del mercado, y los fanáticos del gaming y la potencia se encuentran haciendo
+                colas por conseguir una de ellas.
+            </p>
+
+            <h1 class="seccion">· Tecnología<br></h1>
+            <p class="seccion">
+                La GeForce RTX™ 3090 es una gran GPU endiablada (BFGPU) con rendimiento de la clase TITAN. Con tecnología de Ampere, la arquitectura RTX de la segunda generación de NVIDIA, duplica el trazado de rayos y el rendimiento de IA con núcleos con trazado de rayos (RT) y núcleos Tensor mejorados y nuevos multiprocesadores de streaming mejorados. Además, 
+                presenta unos asombrosos 24 GB de memoria G6X, todo para ofrecer la experiencia de gaming definitiva.
+            </p>
+
+            <h1 class="seccion">· Características<br></h1>
+            <p class="seccion">
+                Destacan entre sus especificaciones sus 24 GB de memoria GDDR6X a 19.5 GHz, su frecuencia de cómputo de 35.58 TFLOPS, un ancho de banda de 
+                memoria de 936.00 GB/s. Tendrá un consumo entre 350 W y 750 W y su precio rondará los 1500 $.
+
+            </p>
+        </div>
+
+        <img src="Imagenes/rtx.png" alt="Imagen RTX 3090 Ti" id="imagen" style="display: none; width: 30%; height: 40%; margin: 10% 0% 0% 65%; position: absolute">
+
+        <!-- BOTONES PARA OCULTAR Y MOSTRAR ENLACES -->
+        <table border="0px" align="center" width="30%" >
+            <tr>
+                <td width="50%" height="100px">
+                    <input type="button" value="Ocultar enlaces" onclick="ocultar(this.form)">                
+                </td>
+
+                <td width="50%" height="100px">
+                    <input type="button" value="Mostrar enlaces" onclick="mostrar(this.form)">
+                </td>
+            </tr>
+        </table>
+    </body>
+
+
+<script language="JAVASCRIPT">
+
+    //Mostrar enlaces y ocultar la imagen
+    function mostrar(form){
+        var enl = document.getElementById("seccionEnlaces");
+            enl.style.display = "block";
+        var img = document.getElementById("imagen");
+            img.style.display = "none"
+       }
+
+    //Ocultar enlaces y mostrar la imagen
+    function ocultar(form){
+        var enl = document.getElementById("seccionEnlaces");
+            enl.style.display = "none";
+        var img = document.getElementById("imagen");
+            img.style.display = "block"
+    }
+
+</script>
