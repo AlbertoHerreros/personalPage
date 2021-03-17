@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <!-- ICONO DE LA PESTAÑA -->
+    <link rel="shortcut icon" href="Imagenes/ISO_C++_Logo.svg" />
+
+    <!-- BEGGINING OF HEAD -->
+	<head>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="scripts.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<meta charset="utf-8"/>
+		<title>Alberto Herreros Magaña</title>
+		<meta name="Website description" content="Personal website."/>
+		<meta name="Author" content="Alberto Herreros Magaña"/>
+        
+	</head>
+    <!-- FINISH OF HEAD -->
+
+    <!-- BEGGINING OF BODY -->
+    <body>
+        
+        <div id="preloader"></div>
+
+        <div id="content">
+            <div id="parteIzq" class=leftPart>
+                <div>
+                    <img src="Imagenes/coding.png" alt="">
+                </div>
+                <div>
+                    <h1>ALBERTO HERREROS MAGAÑA</h1>    
+                </div>
+                <div>
+                    <table class=tabla cellspading=0 cellspacing= 5 px align="center">
+                        <tr>
+                            <th><a href="https://github.com/AlbertoHerreros"><img src="Imagenes/github (1).png" alt=""></a></th>
+                            <th></th> <!-- To give more space between th with images-->
+                            <th><a href="https://www.linkedin.com/in/alberto-herreros-maga%C3%B1a-479910200/?originalSubdomain=es"><img src="Imagenes/linkedin.png" alt=""></a></th>
+                            <th></th>
+                            <th><a href="https://twitter.com/ahmlimas/"><img src="Imagenes/twitter.png" alt=""></a></th>
+                            <th></th>
+                            <th><a href="https://www.instagram.com/alberto_limas/"><img src="Imagenes/instagram.png" alt=""></a></th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    
+            <div id="rayaCentral" class=separator></div>
+    
+            <div id="parteDer" class=rightPart>
+                
+                <div style="margin-top: 5%;"></div>
+                <div class=rayaHoriz></div>
+                <table class=tableButtons cellspading=0px cellspacing = 0px align="center">
+    
+                    <tr>
+                        <th><button style="color:white;" name="btn" onclick="cambiar(0)">SOBRE MI</button></th>
+                        <th><button name="btn" onclick="cambiar(1)">COMPETENCIAS</button></th>
+                        <th><button name="btn" onclick="cambiar(2)">EXPERIENCIA LABORAL</button></th>
+                        <th><button name="btn" onclick="cambiar(3)">INTERESES</button></th>
+                    </tr>
+        
+                </table>
+                <div class=rayaHoriz></div>
+                
+                <div class=aboutMe name="seccion" style="display: block;">
+                    <p>
+                        Nací en Villanueva del Arzobispo (Jaén) y mientras cursaba el Bachillerato Científico-Tecnológico fue cuando descubrí mi pasión por la programación, así
+                        que en 2019 ingresé en el grado Ingeniería Informática en la Escuela Politécnica Superior de Jaén.
+                        ( <a href="https://www.ujaen.es/">UJA</a> ).
+                    </p>
+                    <p>
+                        Planeo terminar mis estudios en 2024 y comenzar mis estudios de posgrado durante 1 o 2 años más. Espero que durante mi trayectoria me forme como programador y 
+                        como persona, alcanzando la madurez necesaria para comenzar mi aventura en el mundo laboral, donde espero seguir aprendiendo aún más.
+                    </p>
+                </div>
+
+                <div class=aboutMe name="seccion" style="display: none;">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, sunt.</p>    
+                </div>
+
+                <div class=exp name="seccion" style="display: none;">
+                    <p>Actualmente no dispongo de experiencia en el ámbito laboral.</p>    
+                </div>
+
+                <div class=aboutMe name="seccion" style="display: none;">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, aperiam.</p>    
+                </div>
+            </div>
+    </body>
+    <!-- END OF BODY -->
